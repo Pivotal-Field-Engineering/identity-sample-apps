@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.5.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.9.RELEASE")
     }
 }
 
@@ -22,4 +22,7 @@ dependencies {
     compile 'org.springframework.cloud:spring-cloud-starter-oauth2'
     compile 'org.springframework.cloud:spring-cloud-cloudfoundry-connector:1.2.0.RELEASE'
     compile 'io.pivotal.spring.cloud:spring-cloud-sso-connector:1.1.0.RELEASE'
+    compile group: 'io.pivotal.spring.cloud', name: 'spring-cloud-sso-connector', version: '2.1.2.RELEASE'
+    compile 'org.springframework.security:spring-security-web:5.0.2.BUILD-SNAPSHOT'
+    compile("org.springframework.security.oauth:spring-security-oauth2:2.2.0.RELEASE")
 }
